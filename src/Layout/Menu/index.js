@@ -2,7 +2,6 @@ import React from 'react'
 import { Menu } from 'antd'
 import { Link } from '@reach/router';
 import menu from '../../menu';
-import { projectName } from '../../Lib/Constant';
 
 const { SubMenu } = Menu
 
@@ -32,7 +31,7 @@ const renderMenu = (menu, baseUrl) => {
 const SiderMenu = (props) => {
     return (
         <div className="layout-sider">
-            <div className="layout-title">{ projectName }</div>
+            <div className="layout-title">{{projectName}}</div>
             <Menu>
                 {renderMenu(menu)}
             </Menu>
