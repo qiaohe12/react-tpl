@@ -32,7 +32,7 @@ const renderMenu = (menu, baseUrl) => {
 const SiderMenu = (props) => {
     return (
         <div className="layout-sider">
-            <div style={{ lineHeight: '48px', paddingLeft: 16 }}>{ projectName }</div>
+            <div className="layout-title">{ projectName }</div>
             <Menu>
                 {renderMenu(menu)}
             </Menu>
